@@ -28,6 +28,7 @@ import { Laptop } from "@phosphor-icons/react/dist/csr/Laptop";
 import { Lightbulb } from "@phosphor-icons/react/dist/csr/Lightbulb";
 import { Lightning } from "@phosphor-icons/react/dist/csr/Lightning";
 import { ListMagnifyingGlass } from "@phosphor-icons/react/dist/csr/ListMagnifyingGlass";
+import { Minus } from "@phosphor-icons/react/dist/csr/Minus";
 import { Monitor } from "@phosphor-icons/react/dist/csr/Monitor";
 import { Moon } from "@phosphor-icons/react/dist/csr/Moon";
 import { Oven } from "@phosphor-icons/react/dist/csr/Oven";
