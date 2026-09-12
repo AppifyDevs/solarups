@@ -51,7 +51,7 @@ export function SiteNav() {
               <a
                 key={link.href}
                 href={link.href}
-                className="rounded-full px-3.5 py-1.5 text-xs text-bone/65 transition-colors duration-500 ease-fluid hover:bg-white/[0.06] hover:text-bone"
+                className="rounded-full px-3.5 py-1.5 text-xs text-bone/85 transition-colors duration-500 ease-fluid hover:bg-white/[0.06] hover:text-bone"
               >
                 {link.label}
               </a>
