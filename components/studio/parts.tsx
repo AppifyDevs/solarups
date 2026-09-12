@@ -216,6 +216,7 @@ export function Stat({
   unit,
   sub,
   tone = "bone",
+  icon: Icon,
   className,
 }: {
   label: string;
@@ -223,6 +224,7 @@ export function Stat({
   unit?: string;
   sub?: string;
   tone?: "bone" | "solar" | "volt" | "good";
+  icon?: PhosphorIcon;
   className?: string;
 }) {
   const tones = {
@@ -233,7 +235,8 @@ export function Stat({
   };
   return (
     <div className={cn("min-w-0", className)}>
-      <span className="block truncate text-[10px] font-medium tracking-[0.16em] text-mute-2 uppercase">
+      <span className="flex items-center gap-1.5 truncate text-[10px] font-medium tracking-[0.16em] text-mute-2 uppercase">
+        {Icon ? <Icon size={11} weight="light" aria-hidden className="shrink-0" /> : null}
         {label}
       </span>
       <span className="mt-1 flex items-baseline gap-1">
