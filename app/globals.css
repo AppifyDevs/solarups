@@ -62,7 +62,7 @@
 
 @layer base {
   html {
-    color-scheme: dark;
+    color-scheme: light;
     scroll-behavior: smooth;
     -webkit-text-size-adjust: 100%;
     scrollbar-gutter: stable;
@@ -79,7 +79,7 @@
 
   ::selection {
     background: var(--color-solar);
-    color: #14100a;
+    color: #ffffff;
   }
 
   :focus-visible {
