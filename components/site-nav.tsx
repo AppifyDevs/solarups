@@ -37,7 +37,7 @@ export function SiteNav() {
       <header className="fixed inset-x-0 top-0 z-50 flex justify-center px-4 pt-4 sm:pt-6">
         <nav
           aria-label="Main"
-          className="flex w-full max-w-5xl items-center justify-between gap-3 rounded-full border border-white/[0.09] bg-ink/55 py-2 pr-2 pl-4 shadow-[0_20px_50px_-30px_rgba(6,40,26,0.18)] backdrop-blur-2xl"
+          className="flex w-full max-w-5xl items-center justify-between gap-3 rounded-full border border-white/[0.09] bg-ink/85 py-2 pr-2 pl-4 shadow-[0_20px_50px_-30px_var(--nav-shadow)] backdrop-blur-2xl"
         >
           <a href="#top" className="flex shrink-0 items-center gap-2.5">
             <span className="flex h-8 w-8 items-center justify-center rounded-full bg-solar/12 text-solar ring-1 ring-solar/25">
