@@ -44,6 +44,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang="en"
+      suppressHydrationWarning
       className={`${body.variable} ${display.variable} ${mono.variable}`}
     >
       <body className="relative min-h-[100dvh] antialiased">
