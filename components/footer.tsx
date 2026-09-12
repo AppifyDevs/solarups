@@ -5,6 +5,7 @@ const LINKS = [
   { href: "#calculator", label: "Calculator" },
   { href: "#library", label: "Appliance library" },
   { href: "#method", label: "Method" },
+  { href: "#leaderboard", label: "Leaderboard" },
   { href: "#faq", label: "FAQ" },
 ];
 
