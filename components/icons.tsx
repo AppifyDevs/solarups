@@ -28,6 +28,7 @@ import { Lightbulb } from "@phosphor-icons/react/dist/csr/Lightbulb";
 import { Lightning } from "@phosphor-icons/react/dist/csr/Lightning";
 import { ListMagnifyingGlass } from "@phosphor-icons/react/dist/csr/ListMagnifyingGlass";
 import { Monitor } from "@phosphor-icons/react/dist/csr/Monitor";
+import { Moon } from "@phosphor-icons/react/dist/csr/Moon";
 import { Oven } from "@phosphor-icons/react/dist/csr/Oven";
 import { Plug } from "@phosphor-icons/react/dist/csr/Plug";
 import { Plus } from "@phosphor-icons/react/dist/csr/Plus";
@@ -81,6 +82,25 @@ export const APPLIANCE_ICONS: Record<IconKey, PhosphorIcon> = {
   console: GameController,
   hairdryer: HairDryer,
 };
+
+/**
+ * Resolves the icon on the client. A server component cannot read
+ * `APPLIANCE_ICONS[...]` directly: a "use client" module only exposes opaque
+ * references, so the property lookup comes back `undefined` and React throws
+ * "Element type is invalid".
+ */
+export function ApplianceIcon({
+  icon,
+  size = 14,
+  className,
+}: {
+  icon: IconKey;
+  size?: number;
+  className?: string;
+}) {
+  const Icon = APPLIANCE_ICONS[icon] ?? APPLIANCE_ICONS.light;
+  return <Icon size={size} weight="light" aria-hidden className={className} />;
+}
 
 export {
   ArrowCounterClockwise,
