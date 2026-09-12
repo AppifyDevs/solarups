@@ -126,7 +126,7 @@ export function RangeField({
         onChange={(event) => onChange(Number(event.target.value))}
         className="mt-2.5 h-1.5 w-full cursor-pointer appearance-none rounded-full outline-none [&::-webkit-slider-thumb]:h-4 [&::-webkit-slider-thumb]:w-4 [&::-webkit-slider-thumb]:appearance-none [&::-webkit-slider-thumb]:rounded-full [&::-webkit-slider-thumb]:bg-solar [&::-webkit-slider-thumb]:shadow-[0_0_0_4px_var(--thumb-glow)] [&::-webkit-slider-thumb]:transition-transform [&::-webkit-slider-thumb]:duration-300 hover:[&::-webkit-slider-thumb]:scale-110 [&::-moz-range-thumb]:h-4 [&::-moz-range-thumb]:w-4 [&::-moz-range-thumb]:appearance-none [&::-moz-range-thumb]:rounded-full [&::-moz-range-thumb]:border-0 [&::-moz-range-thumb]:bg-solar"
         style={{
-          background: `linear-gradient(to right, var(--color-solar) ${pct}%, rgba(6,40,26,0.1) ${pct}%)`,
+          background: `linear-gradient(to right, var(--color-solar) ${pct}%, var(--track-empty) ${pct}%)`,
         }}
       />
       {hint ? <p className="mt-1.5 text-[11px] leading-snug text-mute-2">{hint}</p> : null}
