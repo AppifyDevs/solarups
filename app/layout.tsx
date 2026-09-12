@@ -47,7 +47,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       suppressHydrationWarning
       className={`${body.variable} ${display.variable} ${mono.variable}`}
     >
-      <body className="relative min-h-[100dvh] antialiased">
+      <body className="relative min-h-[100dvh] antialiased" suppressHydrationWarning>
         <script
           dangerouslySetInnerHTML={{
             __html:
