@@ -114,6 +114,7 @@ export {
   Check,
   CircleNotch,
   Copy,
+  DownloadSimple,
   FunctionIcon,
   Gauge,
   House,
