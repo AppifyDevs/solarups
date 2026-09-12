@@ -1,0 +1,30 @@
+{
+  "permissions": {
+    "allow": [
+      "Shell(git:*)",
+      "Shell(node -v)",
+      "Shell(for f in design-taste-frontend high-end-visual-design minimalist-ui sandbox-next emil-design-eng; do echo \"=== $f ===\"; head -12 \"/Users/mdsami/.agents/skills/$f/SKILL.md\" 2>/dev/null; done)",
+      "Shell(npm:*)",
+      "Shell(npx --version)",
+      "Shell(rm:*)",
+      "Shell(npx --yes create-next-app@latest solor-scaffold --ts --tailwind --eslint --app --no-src-dir --import-alias @/* --turbopack --use-npm --yes 2 >& 1)",
+      "Shell(rsync -a --exclude node_modules --exclude .next / /)",
+      "Shell(cd /Users/mdsami/Documents/solorup/node_modules/next/dist/docs && ls 01-app/01-getting-started/ && echo \"=== upgrading ===\" && ls 01-app/02-guides/upgrading/ 2>/dev/null; ls 01-app/02-guides/ | head -40)",
+      "Shell(for:*)",
+      "Shell(do:*)",
+      "Shell([:*)",
+      "Shell(then:*)",
+      "Shell(else:*)",
+      "Shell(fi:*)",
+      "Shell(done:*)",
+      "Shell(node -e const p=require('./package.json'); console.log(p.version); console.log(JSON.stringify(p.exports,null,1)); console.log('sideEffects:', p.sideEffects))",
+      "Shell(grep:*)",
+      "Shell(npx tsc --noEmit 2 >& 1)",
+      "Shell(npx eslint . 2 >& 1)",
+      "Shell(npx next build --debug-prerender 2 >& 1)",
+      "Shell(agent-browser:*)"
+    ],
+    "deny": [],
+    "defaultMode": "default"
+  }
+}
