@@ -24,6 +24,7 @@ import {
   SolarPanel,
 } from "@/components/icons";
 import { Bezel, Eyebrow } from "@/components/bezel";
+import { LeaderboardPanel } from "@/components/studio/leaderboard-panel";
 import { LoadEditor } from "@/components/studio/load-editor";
 import { ResultsBento, ResultsNote, VerdictCard } from "@/components/studio/results";
 import { SettingsPanel } from "@/components/studio/settings-panel";
