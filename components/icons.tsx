@@ -119,6 +119,7 @@ export {
   Info,
   Lightning,
   ListMagnifyingGlass,
+  Moon,
   Plus,
   Printer,
   ShareNetwork,
