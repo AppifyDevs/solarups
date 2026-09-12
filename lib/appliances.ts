@@ -379,6 +379,27 @@ export const APPLIANCES: Appliance[] = [
     group: "Work",
     qty: 1,
   },
+  {
+    id: "ro-water-filter",
+    name: "RO water purifier",
+    icon: "pump",
+    watts: 60,
+    surge: 100,
+    hours: 2,
+    group: "Kitchen",
+    qty: 1,
+    note: "Booster pump cycles on and off to keep pressure, similar to a fridge compressor.",
+  },
+  {
+    id: "uv-water-filter",
+    name: "UV water purifier",
+    icon: "pump",
+    watts: 25,
+    surge: 25,
+    hours: 1,
+    group: "Kitchen",
+    qty: 1,
+  },
 ];
 
 export const APPLIANCE_BY_ID = new Map(APPLIANCES.map((a) => [a.id, a]));
