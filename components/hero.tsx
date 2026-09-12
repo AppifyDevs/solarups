@@ -52,7 +52,7 @@ export function Hero() {
             <span className="text-glow text-solar">from the load up.</span>
           </h1>
 
-          <p className="mt-6 max-w-lg text-[15px] leading-relaxed text-bone/65">
+          <p className="mt-6 max-w-lg text-[15px] leading-relaxed text-bone/80">
             Add your appliances and get the running load, the start-up surge, the battery bank, the
             array and a rough budget. Every formula is shown, so nothing is a black box.
           </p>
