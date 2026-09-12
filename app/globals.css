@@ -196,7 +196,7 @@
 
   * {
     scrollbar-width: thin;
-    scrollbar-color: rgba(6, 40, 26, 0.25) transparent;
+    scrollbar-color: var(--scrollbar-thumb) transparent;
   }
 
   ::-webkit-scrollbar {
@@ -209,28 +209,28 @@
   }
 
   ::-webkit-scrollbar-thumb {
-    background: rgba(6, 40, 26, 0.25);
+    background: var(--scrollbar-thumb);
     border-radius: 999px;
     border: 2px solid var(--color-ink);
   }
 
   ::-webkit-scrollbar-thumb:hover {
-    background: rgba(6, 40, 26, 0.4);
+    background: var(--scrollbar-thumb-hover);
   }
 }
 
 @utility techgrid {
   background-image:
-    linear-gradient(to right, rgba(6, 40, 26, 0.05) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(6, 40, 26, 0.05) 1px, transparent 1px);
+    linear-gradient(to right, var(--grid-line) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--grid-line) 1px, transparent 1px);
   background-size: 72px 72px;
   mask-image: radial-gradient(ellipse 80% 60% at 50% 0%, #000 30%, transparent 100%);
 }
 
 @utility grain {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)'/%3E%3C/svg%3E");
-  opacity: 0.025;
-  mix-blend-mode: multiply;
+  opacity: var(--grain-opacity);
+  mix-blend-mode: var(--grain-blend);
 }
 
 @utility hairline-t {
