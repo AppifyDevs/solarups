@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import { cn } from "@/lib/cn";
 import { ArrowUpRight, SolarPanel } from "@/components/icons";
+import { ThemeToggle } from "@/components/theme-toggle";
 
 const LINKS = [
   { href: "#calculator", label: "Calculator" },
