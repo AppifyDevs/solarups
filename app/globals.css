@@ -5,18 +5,20 @@
   --font-display: var(--font-display), ui-sans-serif, system-ui, sans-serif;
   --font-mono: var(--font-mono), ui-monospace, "SFMono-Regular", monospace;
 
-  --color-ink: #050506;
-  --color-ink-2: #0a0a0c;
-  --color-ink-3: #121215;
-  --color-ink-4: #1a1a1e;
-  --color-bone: #f2efe8;
-  --color-mute: #918c82;
-  --color-mute-2: #625e57;
-  --color-solar: #22c55e;
-  --color-solar-2: #15803d;
-  --color-volt: #74d0ff;
-  --color-good: #2dd4bf;
-  --color-bad: #ff6f59;
+  --color-white: #06281a;
+
+  --color-ink: #ffffff;
+  --color-ink-2: #f3fbf6;
+  --color-ink-3: #e8f6ec;
+  --color-ink-4: #cfead6;
+  --color-bone: #06281a;
+  --color-mute: #35493f;
+  --color-mute-2: #5c7568;
+  --color-solar: #059669;
+  --color-solar-2: #10b981;
+  --color-volt: #2563eb;
+  --color-good: #16a34a;
+  --color-bad: #dc2626;
 
   --radius-bezel: 2rem;
   --radius-bezel-sm: 1.25rem;
