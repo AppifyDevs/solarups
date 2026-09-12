@@ -9,7 +9,6 @@ const LINKS = [
   { href: "#calculator", label: "Calculator" },
   { href: "#library", label: "Appliances" },
   { href: "#method", label: "Method" },
-  { href: "#reference", label: "Reference" },
   { href: "#faq", label: "FAQ" },
 ];
 
