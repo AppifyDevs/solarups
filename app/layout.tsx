@@ -56,14 +56,13 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
             className="animate-drift absolute -top-[32%] -left-[14%] h-[72vmax] w-[72vmax] rounded-full opacity-70"
             style={{
               background:
-                "radial-gradient(circle at center, rgba(16,185,129,0.16), rgba(5,150,105,0.05) 42%, transparent 68%)",
+                "radial-gradient(circle at center, var(--glow-1a), var(--glow-1b) 42%, transparent 68%)",
             }}
           />
           <div
             className="animate-drift absolute -right-[18%] bottom-[-28%] h-[62vmax] w-[62vmax] rounded-full opacity-60 [animation-delay:-9s]"
             style={{
-              background:
-                "radial-gradient(circle at center, rgba(37,99,235,0.10), transparent 66%)",
+              background: "radial-gradient(circle at center, var(--glow-2a), transparent 66%)",
             }}
           />
           <div className="techgrid absolute inset-x-0 top-0 h-[120vh]" />
