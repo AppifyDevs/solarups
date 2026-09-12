@@ -122,6 +122,7 @@ export {
   Info,
   Lightning,
   ListMagnifyingGlass,
+  Minus,
   Moon,
   Plus,
   Printer,
