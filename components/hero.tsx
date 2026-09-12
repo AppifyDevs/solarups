@@ -102,7 +102,7 @@ export function Hero() {
             <div className="flex items-start justify-between gap-4">
               <div>
                 <Eyebrow>Worked example</Eyebrow>
-                <p className="mt-3 max-w-[15rem] text-[12px] leading-relaxed text-bone/60">
+                <p className="mt-3 max-w-[15rem] text-[12px] leading-relaxed text-bone/80">
                   The seven-appliance home from the reference table, run through the same engine the
                   calculator uses.
                 </p>
