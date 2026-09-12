@@ -60,7 +60,8 @@ export function LeaderboardSection() {
               <p className="text-[12px] text-mute-2">Loading…</p>
             ) : entries.length === 0 ? (
               <p className="text-[12px] text-mute-2">
-                Nothing shared yet — sizing a system and tapping "Add my result" puts it here.
+                Nothing shared yet — sizing a system and tapping &ldquo;Add my result&rdquo; puts
+                it here.
               </p>
             ) : (
               <>
