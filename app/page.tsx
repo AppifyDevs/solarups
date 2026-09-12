@@ -19,7 +19,6 @@ export default function Home() {
         </div>
         <Library />
         <Method />
-        <ReferenceTable />
         <Faq />
       </main>
       <Footer />
