@@ -61,11 +61,79 @@
 }
 
 @layer base {
+  :root {
+    --grid-line: rgba(6, 40, 26, 0.05);
+    --hairline: rgba(6, 40, 26, 0.09);
+    --inner-hi-top: rgba(255, 255, 255, 0.8);
+    --inner-hi-bottom: rgba(6, 40, 26, 0.06);
+    --scrollbar-thumb: rgba(6, 40, 26, 0.25);
+    --scrollbar-thumb-hover: rgba(6, 40, 26, 0.4);
+    --selection-fg: #ffffff;
+    --grain-opacity: 0.025;
+    --grain-blend: multiply;
+    --glow-1a: rgba(16, 185, 129, 0.16);
+    --glow-1b: rgba(5, 150, 105, 0.05);
+    --glow-2a: rgba(37, 99, 235, 0.1);
+    --nav-shadow: rgba(6, 40, 26, 0.18);
+    --brand-shadow: rgba(5, 150, 105, 0.35);
+    --track-empty: rgba(6, 40, 26, 0.1);
+    --thumb-glow: rgba(34, 197, 94, 0.18);
+    --chip-shadow: rgba(5, 150, 105, 0.28);
+    --bezel-solar-bg: linear-gradient(
+      160deg,
+      rgba(16, 185, 129, 0.16),
+      rgba(243, 251, 246, 0.98) 58%
+    );
+  }
+
+  :root[data-theme="dark"] {
+    --color-white: #ffffff;
+    --color-ink: #060f0a;
+    --color-ink-2: #0a1811;
+    --color-ink-3: #102319;
+    --color-ink-4: #183021;
+    --color-bone: #edf7f0;
+    --color-mute: #93a99b;
+    --color-mute-2: #62786c;
+    --color-solar: #34d399;
+    --color-solar-2: #10b981;
+    --color-volt: #74d0ff;
+    --color-good: #4ade80;
+    --color-bad: #ff6f59;
+
+    --grid-line: rgba(237, 247, 240, 0.045);
+    --hairline: rgba(237, 247, 240, 0.08);
+    --inner-hi-top: rgba(255, 255, 255, 0.07);
+    --inner-hi-bottom: rgba(0, 0, 0, 0.4);
+    --scrollbar-thumb: rgba(237, 247, 240, 0.18);
+    --scrollbar-thumb-hover: rgba(237, 247, 240, 0.3);
+    --selection-fg: #052e1a;
+    --grain-opacity: 0.04;
+    --grain-blend: overlay;
+    --glow-1a: rgba(52, 211, 153, 0.2);
+    --glow-1b: rgba(16, 185, 129, 0.07);
+    --glow-2a: rgba(116, 208, 255, 0.14);
+    --nav-shadow: rgba(0, 0, 0, 0.8);
+    --brand-shadow: rgba(52, 211, 153, 0.35);
+    --track-empty: rgba(237, 247, 240, 0.12);
+    --thumb-glow: rgba(52, 211, 153, 0.22);
+    --chip-shadow: rgba(52, 211, 153, 0.3);
+    --bezel-solar-bg: linear-gradient(
+      160deg,
+      rgba(52, 211, 153, 0.12),
+      rgba(6, 15, 10, 0.9) 58%
+    );
+  }
+
   html {
     color-scheme: light;
     scroll-behavior: smooth;
     -webkit-text-size-adjust: 100%;
     scrollbar-gutter: stable;
+  }
+
+  html[data-theme="dark"] {
+    color-scheme: dark;
   }
 
   body {
@@ -79,7 +147,7 @@
 
   ::selection {
     background: var(--color-solar);
-    color: #ffffff;
+    color: var(--selection-fg);
   }
 
   :focus-visible {
