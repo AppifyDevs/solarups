@@ -16,22 +16,25 @@ export function LeaderboardSection() {
 
   useEffect(() => {
     let cancelled = false;
-    setLoading(true);
-    fetch(`/api/submissions?limit=${limit}`)
-      .then((res) => res.json())
-      .then((data) => {
-        if (cancelled) return;
-        setConfigured(Boolean(data.configured));
-        setEntries(data.entries ?? []);
-      })
-      .catch(() => {
-        if (!cancelled) setEntries([]);
-      })
-      .finally(() => {
-        if (!cancelled) setLoading(false);
-      });
+    const timer = window.setTimeout(() => {
+      setLoading(true);
+      fetch(`/api/submissions?limit=${limit}`)
+        .then((res) => res.json())
+        .then((data) => {
+          if (cancelled) return;
+          setConfigured(Boolean(data.configured));
+          setEntries(data.entries ?? []);
+        })
+        .catch(() => {
+          if (!cancelled) setEntries([]);
+        })
+        .finally(() => {
+          if (!cancelled) setLoading(false);
+        });
+    }, 0);
     return () => {
       cancelled = true;
+      window.clearTimeout(timer);
     };
   }, [limit]);
 
