@@ -13,6 +13,7 @@ import { CircleNotch } from "@phosphor-icons/react/dist/csr/CircleNotch";
 import { CookingPot } from "@phosphor-icons/react/dist/csr/CookingPot";
 import { Copy } from "@phosphor-icons/react/dist/csr/Copy";
 import { Desktop } from "@phosphor-icons/react/dist/csr/Desktop";
+import { DownloadSimple } from "@phosphor-icons/react/dist/csr/DownloadSimple";
 import { Drop } from "@phosphor-icons/react/dist/csr/Drop";
 import { Fan } from "@phosphor-icons/react/dist/csr/Fan";
 import { Flame } from "@phosphor-icons/react/dist/csr/Flame";
