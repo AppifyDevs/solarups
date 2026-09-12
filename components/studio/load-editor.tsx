@@ -6,7 +6,7 @@ import type { LoadItem } from "@/lib/calc";
 import { cn } from "@/lib/cn";
 import { energy, watts } from "@/lib/format";
 import { APPLIANCE_ICONS, ListMagnifyingGlass, Plus, Trash, X } from "@/components/icons";
-import { CardHead, NumField } from "@/components/studio/parts";
+import { CardHead, NumField, QtyStepper } from "@/components/studio/parts";
 
 export function LoadEditor({
   loads,
