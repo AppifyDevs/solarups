@@ -89,6 +89,7 @@ export function VerdictCard({ result, settings }: { result: Result; settings: Se
 
         <div className="mt-6 grid grid-cols-2 gap-x-4 gap-y-6">
           <Stat
+            icon={Lightning}
             label="Inverter / UPS"
             value={hasLoad ? inverter.value : "—"}
             unit={hasLoad ? inverter.unit : undefined}
@@ -96,18 +97,21 @@ export function VerdictCard({ result, settings }: { result: Result; settings: Se
             tone="solar"
           />
           <Stat
+            icon={BatteryCharging}
             label="Battery bank"
             value={hasLoad ? num(result.installedBankAh) : "—"}
             unit={hasLoad ? "Ah" : undefined}
             sub={`${result.systemVoltage} V · ${result.batteryCount} × ${settings.moduleAh} Ah`}
           />
           <Stat
+            icon={SolarPanel}
             label="Solar array"
             value={hasLoad ? array.value : "—"}
             unit={hasLoad ? array.unit : undefined}
             sub={`${result.panelCount} × ${settings.panelWatt} W panels`}
           />
           <Stat
+            icon={Gauge}
             label="Rough budget"
             value={hasLoad ? money(result.costTotal, settings.currency) : "—"}
             sub="at your editable rates"
