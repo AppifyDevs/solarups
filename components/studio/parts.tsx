@@ -164,7 +164,7 @@ export function Segmented<T extends string | number>({
               className={cn(
                 "flex-1 rounded-lg px-2 py-1.5 font-mono text-xs tabular-nums transition-all duration-500 ease-fluid",
                 active
-                  ? "bg-solar text-ink shadow-[0_2px_12px_rgba(5,150,105,0.28)]"
+                  ? "bg-solar text-ink shadow-[0_2px_12px_var(--chip-shadow)]"
                   : "text-mute hover:bg-white/[0.05] hover:text-bone",
               )}
             >
