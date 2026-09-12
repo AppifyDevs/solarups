@@ -96,7 +96,7 @@ export function Hero() {
         <div className="lg:col-span-6 lg:pl-4">
           <Bezel
             tone="solar"
-            className="shadow-[0_60px_120px_-60px_rgba(5,150,105,0.35)]"
+            className="shadow-[0_60px_120px_-60px_var(--brand-shadow)]"
             innerClassName="p-6 sm:p-7"
           >
             <div className="flex items-start justify-between gap-4">
