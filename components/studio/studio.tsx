@@ -167,6 +167,14 @@ export function Studio() {
           </button>
           <button
             type="button"
+            onClick={exportSummary}
+            aria-label="Export the summary as a text file"
+            className="flex h-9 w-9 items-center justify-center rounded-full bg-white/[0.05] text-mute ring-1 ring-white/[0.08] transition-colors duration-500 ease-fluid hover:text-bone"
+          >
+            <DownloadSimple size={14} weight="light" aria-hidden />
+          </button>
+          <button
+            type="button"
             onClick={() => window.print()}
             aria-label="Print the summary"
             className="flex h-9 w-9 items-center justify-center rounded-full bg-white/[0.05] text-mute ring-1 ring-white/[0.08] transition-colors duration-500 ease-fluid hover:text-bone"
