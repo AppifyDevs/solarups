@@ -46,8 +46,8 @@ export function LeaderboardSection() {
           Every calculation, shared by users.
         </h2>
         <p className="mt-3 max-w-2xl text-[13px] leading-relaxed text-mute">
-          Anyone who taps "Add my result" in the calculator shows up here — a public, unranked
-          feed of real load lists and the systems they sized.
+          Anyone who taps &ldquo;Add my result&rdquo; in the calculator shows up here — a public,
+          unranked feed of real load lists and the systems they sized.
         </p>
 
         <Bezel className="mt-6">
