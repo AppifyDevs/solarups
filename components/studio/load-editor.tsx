@@ -185,12 +185,36 @@ export function LoadEditor({
             ) : null}
           </div>
 
+          <div className="mt-2.5 flex gap-1.5 overflow-x-auto pb-1">
+            {(["All", ...GROUPS] as const).map((group) => {
+              const active = group === activeGroup;
+              return (
+                <button
+                  key={group}
+                  type="button"
+                  onClick={() => setActiveGroup(group)}
+                  aria-pressed={active}
+                  className={cn(
+                    "shrink-0 rounded-full px-3 py-1 text-[11px] whitespace-nowrap ring-1 transition-all duration-500 ease-fluid",
+                    active
+                      ? "bg-solar text-ink ring-solar"
+                      : "bg-white/[0.03] text-mute ring-white/[0.06] hover:bg-white/[0.07] hover:text-bone",
+                  )}
+                >
+                  {group}
+                </button>
+              );
+            })}
+          </div>
+
           <div className="mt-3 max-h-[19rem] space-y-3 overflow-y-auto pr-1">
             {grouped.map((bucket) => (
               <div key={bucket.group}>
-                <p className="px-1 text-[10px] font-medium tracking-[0.18em] text-mute-2 uppercase">
-                  {bucket.group}
-                </p>
+                {activeGroup === "All" ? (
+                  <p className="px-1 text-[10px] font-medium tracking-[0.18em] text-mute-2 uppercase">
+                    {bucket.group}
+                  </p>
+                ) : null}
                 <div className="mt-1.5 grid gap-1.5 sm:grid-cols-2">
                   {bucket.items.map((appliance) => {
                     const Icon = APPLIANCE_ICONS[appliance.icon] ?? APPLIANCE_ICONS.light;
