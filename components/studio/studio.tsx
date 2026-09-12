@@ -132,6 +132,12 @@ export function Studio() {
     }
   }, [loads, settings]);
 
+  const exportSummary = useCallback(() => {
+    const report = buildReport(loads, settings, result);
+    const date = new Date().toISOString().slice(0, 10);
+    downloadText(`solor-sizing-${date}.txt`, report);
+  }, [loads, settings, result]);
+
   const activePreset = PRESETS.find((preset) => preset.id === presetId);
 
   return (
