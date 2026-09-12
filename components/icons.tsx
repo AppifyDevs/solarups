@@ -74,6 +74,12 @@ export const APPLIANCE_ICONS: Record<IconKey, PhosphorIcon> = {
   pump: Drop,
   oven: Oven,
   speaker: SpeakerHigh,
+  iron: ShirtFolded,
+  heater: Flame,
+  kettle: Plug,
+  camera: SecurityCamera,
+  console: GameController,
+  hairdryer: HairDryer,
 };
 
 export {
