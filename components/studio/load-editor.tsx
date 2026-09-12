@@ -86,7 +86,7 @@ export function LoadEditor({
                   </div>
 
                   <div className="mt-3 grid grid-cols-2 gap-2 sm:grid-cols-4">
-                    <NumField
+                    <QtyStepper
                       label="Qty"
                       value={load.qty}
                       min={1}
