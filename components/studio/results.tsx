@@ -63,7 +63,7 @@ function Insights({ result }: { result: Result }) {
               aria-hidden
               className={cn("mt-0.5 shrink-0", TONE_RING[insight.tone])}
             />
-            <span className="text-[12px] leading-relaxed text-bone/75">{insight.text}</span>
+            <span className="text-[12px] leading-relaxed text-bone/85">{insight.text}</span>
           </li>
         );
       })}
