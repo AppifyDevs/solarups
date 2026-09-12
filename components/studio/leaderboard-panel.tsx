@@ -25,12 +25,15 @@ export function LeaderboardPanel({
   const [status, setStatus] = useState<"idle" | "saving" | "saved" | "error">("idle");
 
   useEffect(() => {
-    try {
-      setName(window.localStorage.getItem(NAME_KEY) ?? "");
-    } catch {
-      /* privacy mode */
-    }
-    fetchRecent();
+    const timer = window.setTimeout(() => {
+      try {
+        setName(window.localStorage.getItem(NAME_KEY) ?? "");
+      } catch {
+        /* privacy mode */
+      }
+      fetchRecent();
+    }, 0);
+    return () => window.clearTimeout(timer);
   }, []);
 
   async function fetchRecent() {
