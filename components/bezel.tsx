@@ -17,7 +17,7 @@ const OUTER_TONE = {
 
 const INNER_TONE = {
   default: "bg-ink-2",
-  solar: "bg-[linear-gradient(160deg,rgba(16,185,129,0.16),rgba(243,251,246,0.98)_58%)]",
+  solar: "bezel-solar-bg",
   flat: "bg-ink-2/60",
 };
 
