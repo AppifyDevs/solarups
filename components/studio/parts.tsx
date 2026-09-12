@@ -84,6 +84,71 @@ export function NumField({
   );
 }
 
+export function QtyStepper({
+  label,
+  value,
+  onChange,
+  min = 1,
+  max = 99,
+  className,
+}: {
+  label: string;
+  value: number;
+  onChange: (value: number) => void;
+  min?: number;
+  max?: number;
+  className?: string;
+}) {
+  const id = useId();
+  const clamp = (next: number) => Math.min(max, Math.max(min, next));
+
+  return (
+    <div
+      className={cn(
+        "flex items-center gap-1 rounded-xl bg-white/[0.035] px-1.5 py-1 ring-1 ring-white/[0.06] transition-[box-shadow,background-color] duration-500 ease-fluid focus-within:bg-white/[0.06] focus-within:ring-solar/45",
+        className,
+      )}
+    >
+      <button
+        type="button"
+        onClick={() => onChange(clamp(value - 1))}
+        disabled={value <= min}
+        aria-label={`Decrease ${label}`}
+        className="flex h-7 w-7 shrink-0 items-center justify-center rounded-lg text-bone/80 transition-colors duration-300 hover:bg-white/[0.08] hover:text-bone disabled:opacity-30 disabled:hover:bg-transparent"
+      >
+        <Minus size={11} weight="bold" aria-hidden />
+      </button>
+      <label htmlFor={id} className="min-w-0 flex-1 text-center">
+        <span className="block truncate text-[9px] font-medium tracking-[0.16em] text-mute-2 uppercase">
+          {label}
+        </span>
+        <input
+          id={id}
+          type="text"
+          inputMode="numeric"
+          autoComplete="off"
+          spellCheck={false}
+          value={value}
+          onChange={(event) => {
+            const parsed = Number.parseInt(event.target.value, 10);
+            if (Number.isFinite(parsed)) onChange(clamp(parsed));
+          }}
+          className="w-full min-w-0 bg-transparent text-center font-mono text-sm tabular-nums text-bone outline-none"
+        />
+      </label>
+      <button
+        type="button"
+        onClick={() => onChange(clamp(value + 1))}
+        disabled={value >= max}
+        aria-label={`Increase ${label}`}
+        className="flex h-7 w-7 shrink-0 items-center justify-center rounded-lg text-bone/80 transition-colors duration-300 hover:bg-white/[0.08] hover:text-bone disabled:opacity-30 disabled:hover:bg-transparent"
+      >
+        <Plus size={11} weight="bold" aria-hidden />
+      </button>
+    </div>
+  );
+}
+
 export function RangeField({
   label,
   value,
