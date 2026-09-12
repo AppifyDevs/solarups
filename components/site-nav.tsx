@@ -60,6 +60,7 @@ export function SiteNav() {
           </div>
 
           <div className="flex items-center gap-2">
+            <ThemeToggle />
             <a
               href="#calculator"
               className="group/btn hidden items-center gap-2 rounded-full bg-solar py-1.5 pr-1.5 pl-4 text-xs font-medium text-ink transition-transform duration-500 ease-fluid active:scale-[0.97] md:flex"
