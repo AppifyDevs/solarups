@@ -245,6 +245,7 @@ export function Studio() {
 
       <ResultsBento result={result} settings={settings} />
       <ResultsNote />
+      <LeaderboardPanel applianceCount={loads.length} result={result} settings={settings} />
     </section>
   );
 }
