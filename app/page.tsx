@@ -1,6 +1,7 @@
 import { Faq } from "@/components/faq";
 import { Footer } from "@/components/footer";
 import { Hero } from "@/components/hero";
+import { LeaderboardSection } from "@/components/leaderboard-section";
 import { Library } from "@/components/library";
 import { Method } from "@/components/method";
 import { SiteNav } from "@/components/site-nav";
