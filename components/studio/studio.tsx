@@ -13,8 +13,16 @@ import {
   type Settings,
 } from "@/lib/calc";
 import { cn } from "@/lib/cn";
+import { buildReport, downloadText } from "@/lib/export";
 import { decodeState, encodeState } from "@/lib/persist";
-import { ArrowCounterClockwise, Check, Copy, Printer, SolarPanel } from "@/components/icons";
+import {
+  ArrowCounterClockwise,
+  Check,
+  Copy,
+  DownloadSimple,
+  Printer,
+  SolarPanel,
+} from "@/components/icons";
 import { Bezel, Eyebrow } from "@/components/bezel";
 import { LoadEditor } from "@/components/studio/load-editor";
 import { ResultsBento, ResultsNote, VerdictCard } from "@/components/studio/results";
