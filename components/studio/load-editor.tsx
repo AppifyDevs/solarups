@@ -126,9 +126,13 @@ export function LoadEditor({
         })}
 
         {loads.length === 0 ? (
-          <p className="rounded-[1.4rem] bg-white/[0.015] px-4 py-8 text-center text-sm text-mute ring-1 ring-dashed ring-white/[0.08]">
-            Nothing here yet. Add your first appliance below.
-          </p>
+          <button
+            type="button"
+            onClick={() => setPickerOpen(true)}
+            className="w-full rounded-[1.4rem] bg-white/[0.015] px-4 py-8 text-center text-sm text-mute ring-1 ring-dashed ring-white/[0.08] transition-colors duration-500 ease-fluid hover:bg-white/[0.03] hover:text-bone"
+          >
+            Nothing here yet. Tap to add your first appliance.
+          </button>
         ) : null}
       </div>
 
